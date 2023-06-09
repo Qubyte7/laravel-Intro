@@ -11,9 +11,13 @@ class CreatedController extends Controller
      */
     public function index()
     {
-        //
+        echo "we are using the controler";
     }
 
+    public function index2($user)
+    {
+        echo "we are using the controler Brother " .$user;
+    }
     /**
      * Show the form for creating a new resource.
      */

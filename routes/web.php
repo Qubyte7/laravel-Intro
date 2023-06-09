@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CreatedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//getting informstion form the URL
-Route::get('/{name}', function ($name) {
-    //providing the info got from the url to the welcome page
-    return view('welcome',['name' => $name]);
-});
+// //getting information form the URL
+// Route::get('/{name}', function ($name) {
+//     //providing the info got from the url to the welcome page
+//     return view('welcome',['name' => $name]);
+// });
+
+              //Using controller in the Route
+Route::get("/users",[CreatedController::class,'index']);
+               //controllers with ARG
+Route::get("/users/{user}",[CreatedController::class,'index2']);
+
 
 Route::get('/laravel/about', function () {
     return view('about');
@@ -28,3 +35,16 @@ Route::view('/laravel/contact','contact');//1st RAG :URL ,2nd ARG Our Page
 Route::fallback(function () {
     return redirect('/welcome');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
