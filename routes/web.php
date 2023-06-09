@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('hello');
+//getting informstion form the URL
+Route::get('/{name}', function ($name) {
+    //providing the info got from the url to the welcome page
+    return view('welcome',['name' => $name]);
+});
+
+Route::get('/laravel/about', function () {
+    return view('about');
+});
+//another way to get a page
+Route::view('/laravel/contact','contact');//1st RAG :URL ,2nd ARG Our Page
+   // Redirect the user to a specific page
+Route::fallback(function () {
+    return redirect('/welcome');
 });

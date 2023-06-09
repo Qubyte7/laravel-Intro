@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
 </head>
 <body>
-    <h1>Welcome MR/Mss {{$name}} to Our Web Site</h>
-    <p>Your comfort is our Pleasure!</p>
-   <a href="/laravel/about">About</a>
-   <br>
-   <a href="/laravel/contact">Contact</a>
+     <h1>ABOUT</h1>
+    <p> The PM of this Project Honor.Innocent Found that It was a great lifetime for parents to be With there children!  </p>
 </body>
 </html>
