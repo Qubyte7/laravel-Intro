@@ -18,6 +18,12 @@ class CreatedController extends Controller
     {
         echo "we are using the controler Brother " .$user;
     }
+    public function index3($name)
+    {
+        return view('users',['age'=> 18],['name'=>$name]);
+    }    
+
+
     /**
      * Show the form for creating a new resource.
      */

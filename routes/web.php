@@ -25,6 +25,7 @@ Route::get("/users",[CreatedController::class,'index']);
                //controllers with ARG
 Route::get("/users/{user}",[CreatedController::class,'index2']);
 
+Route::get("/users/user/view/{name}",[CreatedController::class,'index3']);
 
 Route::get('/laravel/about', function () {
     return view('about');
