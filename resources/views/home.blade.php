@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+  <x-header data="users Component Header"/>
+
    <h2> Home page </h2>
     <!-- to see the current URL -->
     {{URL::current()}} 
@@ -13,7 +15,6 @@
 <form action="{{URL::to('/about1')}}">
     <input type="text" name = "Input">
     <input type="submit" value = "submit">
-
 </form>
 </body>
 </html>
