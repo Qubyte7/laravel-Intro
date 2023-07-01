@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class studentController extends Controller
 {
+
+function viewload(){
+    $data = ['innocent','ganza','sabrina','Michael'];
+    return view('student',['students' => $data]);
+}
+
+
     /**
      * Display a listing of the resource.
      */

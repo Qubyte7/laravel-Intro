@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CreatedController;
-
+use App\Http\Controllers\studentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,7 +54,7 @@ Route::get('/about1',function(){
 });
 
 
-
+Route::get('/student',[studentController::class,'viewload']);
 
 
 
