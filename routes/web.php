@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CreatedController;
 use App\Http\Controllers\studentController;
+use App\Http\Controllers\form;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,5 +58,12 @@ Route::get('/about1',function(){
 Route::get('/student',[studentController::class,'viewload']);
 
 Route::get('/product',[StudentController::class,'product']);
+
+
+// form
+
+Route::post('/form',[form::class,'getdata']);
+Route::view("login","formLogin");
+
 
 
