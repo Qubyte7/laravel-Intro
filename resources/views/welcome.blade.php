@@ -7,8 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome MR/Mss {{$name}} to Our Web Site</h>
+<?php 
+function adding(){
+    $num=1;
+    $num2=2;
+    $add = $num + $num2;
+    return $add;
+}
+
+?>
     <p>Your comfort is our Pleasure!</p>
+    {{adding()}}
+    <br>
    <a href="/laravel/about">About</a>
    <br>
    <a href="/laravel/contact">Contact</a>

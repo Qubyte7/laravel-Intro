@@ -30,6 +30,9 @@ Route::get("/users/user/view/{name}",[CreatedController::class,'index3']);
 Route::get('/laravel/about', function () {
     return view('about');
 });
+Route::get('/welcome',function(){
+    return view('welcome');
+});
 //another way to get a page
 Route::view('/laravel/contact','contact');//1st RAG :URL ,2nd ARG Our Page
    // Redirect the user to a specific page
