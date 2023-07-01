@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Blade;
 class studentController extends Controller
 {
 
@@ -12,7 +12,11 @@ function viewload(){
     return view('student',['students' => $data]);
 }
 
+function product(){
+    $totalProduct =20;
 
+return Blade::render('<h1>Product List {{$total}}</h1>',['total'=>$totalProduct]);
+}
     /**
      * Display a listing of the resource.
      */

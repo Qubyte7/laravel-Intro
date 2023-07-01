@@ -56,6 +56,6 @@ Route::get('/about1',function(){
 
 Route::get('/student',[studentController::class,'viewload']);
 
-
+Route::get('/product',[StudentController::class,'product']);
 
 
